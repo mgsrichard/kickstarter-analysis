@@ -46,16 +46,11 @@ My main challenges in this assignment were to become comfortable with how pivot 
 
 In conclusion, theater Kickstarters are more likely to succeed than fail, and May-July is the optimal window for launching. Most campaigns have goals of $10,000 or less, and the lower your goal, the higher your chances are of achieving your fundraising goal.
 
+
+### Limitations in the Data
 The limitations I can see to this dataset are that it is drawn from only one crowdsourcing site, and that it mixes currencies.  Kickstarter is one of many crowsourcing sites, and it's possible that there are biases about who chooses which sites for which projects.  Are theater campaigns more or less likely to be launched here, and more or less likely to be viewed by the theater community and its supporters? I don't know.  There could be many unknown factors in the selection of the crowdsourcing site.  Secondly, we have considered money amounts from around the world without doing any currency conversions, so it's possible that we are not always comparing apples to apples in the data.  Does an Australian dollar have the same feel, the same buying power, as a US dollar or a British pound?  As far as I can tell we don't have data from Japan or India where the basic unit of currency is more comparable to our cents than our dollars, so it seems that at least we are not off in scale.  
 
 
+### Other Possible Analyses
 There are other analyses/tables we could look at.  For example, have theses trends changed over the years as more fundraising has moved online? It might be interesting to compare on a yearly basis.  Also, we could look at the duration of the campaigns.  Is it possible that having a couple more weeks makes it more likely for the campaign to be successful?  Another possibility is that we could also do an analysis of size of individual donations, and figure out whether campaigns are more likely to be successful with many small donations or if having one or two large donations makes reaching the goal more likely.  
 
-
-- What are two conclusions you can draw about the Outcomes based on Launch Date?
-
-- What can you conclude about the Outcomes based on Goals?
-
-- What are some limitations of this dataset?
-
-- What are some other possible tables and/or graphs that we could create?
