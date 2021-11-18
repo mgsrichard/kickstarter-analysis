@@ -33,7 +33,7 @@ Finally, I created my line graph.  I stretched it out until the proportions look
 
 Below we can see the graph for outcomes based on launch date.  One conclusion to be drawn from this graph is that, broadly speaking, theater kickstarters are more likely to succeed than to fail.  The successful graph line is consistently above the failed line through all months.  For example, in March, 56 succeeded and 33 failed.  A second conclusion is that the best time to launch a campaign is in the months of May, June, and July, and May seems to be the absolute best time for a campaign, with 111 successes versus 52 failures.  Thirdly, October, November, December, and January are the least desirable months to launch, with fewer launches and a lower rate of successes.  
 
-![Outcomes based on launch date graph](https://github.com/mgsrichard/kickstarter-analysis/blob/main/Outcomes%20Based%20on%20Launch%20Date.png)
+![Outcomes based on launch date graph](https://github.com/mgsrichard/kickstarter-analysis/blob/main/Theater_Outcomes_vs_Launch.png)
 
 
 ### Analysis of Outcomes Based on Goals
