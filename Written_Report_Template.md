@@ -10,7 +10,7 @@ The purpose of the challenge is to analyze the data, zeroing in on plays only, t
 ## Analysis and Challenges
 To find these answers, I started in Excel.  First I added a column for year in the original Kickstarter data tab, using the Excel function YEAR() and referencing the date created which was in column S in my worksheet. Then I created a pivot table based on the data.  Pivot tables are a little challenging for me, but I am starting to get a good feel for how they work and what happens when you move different fields into the filter, row, column, and value boxes.  Here's how my pivot table looked:
 
-insert pivot table image
+![pivot table image](https://github.com/mgsrichard/kickstarter-analysis/blob/main/Theater%20outcomes%20based%20on%20launch%20date%20pivot%20screen%20cap.png)
 
 My pivot table came out correct, and then I created the line graph from the data.  I clicked around inside Excel until I found the spot to remove the filter drop down boxes from the graph for a more professional finished look, as in the example in the directions for the challenge.  I saved my line graph image as "Outcomes Based on Dates" and moved on to the next question. 
 
@@ -24,8 +24,8 @@ The formula I programmed for failed plays with a goal of 1000 to 4999 is:
 
 I then found the total number of projects using the SUM() function, and found the percent of successful, failed, and canceled projects for each value range, dividing the individual counts by the total counts and rounding to 2 decimal places with ROUND() for clean looking percentages.  For example, for the percentage of successful plays, in the first value range, my formula is =ROUND(B2/E2,2). Next, since we didn't have a table in the directions to compare our numbers to, I decided I wanted to check my work a little. I created a new little pivot table that summed up the counts of failed, successful, and canceled projects and filtered it to just plays.  My total counts matched up, so I felt more confident. I also thought it was worth checking that there were zero canceled plays, so I went back to the original kickstarter data page and filetered by canceled plays to verify that zero was correct. I also could see in the example graph from the challenge directions that the line for canceled plays seemed to be right along the x axis (it's grey though, so it's hard to tell if there is a line there or if it's just the axis itself), so that all seemed to fit and be correct.  Here's an image of my outcome by goal spreadsheet, and below it an image of my checking pivot table:
 
-insert outcome by goal spreadsheet
-insert check pivot table
+![outcome by goal spreadsheet screen cap](https://github.com/mgsrichard/kickstarter-analysis/blob/main/Outcomes%20based%20on%20goals%20spreadsheet.png)
+![check pivot table](https://github.com/mgsrichard/kickstarter-analysis/blob/main/Pivot%20table%20to%20check%20count%20of%20outcomes%20based%20on%20goals%20spreadsheet%20screen%20cap.png)
 
 Finally, I created my line graph.  I stretched it out until the proportions looked good and put a title on it.  I saved it as "Outcomes Based on Goal."
 
@@ -33,10 +33,14 @@ Finally, I created my line graph.  I stretched it out until the proportions look
 
 Below we can see the graph for outcomes based on launch date.  One conclusion to be drawn from this graph is that, broadly speaking, theater kickstarters are more likely to succeed than to fail.  The successful graph line is consistently above the failed line through all months.  For example, in March, 56 succeeded and 33 failed.  A second conclusion is that the best time to launch a campaign is in the months of May, June, and July, and May seems to be the absolute best time for a campaign, with 111 successes versus 52 failures.  Thirdly, October, November, December, and January are the least desirable months to launch, with fewer launches and a lower rate of successes.  
 
+![Outcomes based on launch date graph](https://github.com/mgsrichard/kickstarter-analysis/blob/main/Outcomes%20Based%20on%20Launch%20Date.png)
+
 
 ### Analysis of Outcomes Based on Goals
 
-In the graph below we are graphing outcomes versus the amount of the original goal.  Generally, campaigns with smaller goals are more likely to be successful.  Even though the graph shows a higher percentage of successes than failures for the ranges between $35,000 and $45,000,  I would caution that the majority of the data analyzed falls into the smaller categories, and the ones in the $35,000 to $45,000 range make up only 9 of 1,047 launches considered. Additionally, 85% of the campaigns we analyzed had a goal of $10,000 or less, which leads to the conclusion that most campaigns, successful or not, have goals of $10,000 or less. In short, the lower the goal, the more likely the campaign is to succeed.
+In the graph below we are graphing outcomes versus the amount of the original goal.  Generally, campaigns with smaller goals are more likely to be successful.  Even though the graph shows a higher percentage of successes than failures for the ranges between $35,000 and $45,000,  I would caution that the majority of the data analyzed falls into the smaller categories, and the ones in the $35,000 to $45,000 range make up only 9 of 1,047 launches considered. Additionally, 85% of the campaigns we analyzed had a goal of $10,000 or less, which leads to the conclusion that most informative and reliable part of this graph is the left side, up through a value of $10,000. In short, the lower the goal, the more likely the campaign is to succeed.
+
+![Outcomes based on goals graph](https://github.com/mgsrichard/kickstarter-analysis/blob/main/Outcomes_vs_Goals.png)
 
 ### Challenges and Difficulties Encountered
 
@@ -48,7 +52,7 @@ In conclusion, theater Kickstarters are more likely to succeed than fail, and Ma
 
 
 ### Limitations in the Data
-The limitations I can see to this dataset are that it is drawn from only one crowdsourcing site, and that it mixes currencies.  Kickstarter is one of many crowsourcing sites, and it's possible that there are biases about who chooses which sites for which projects.  Are theater campaigns more or less likely to be launched here, and more or less likely to be viewed by the theater community and its supporters? I don't know.  There could be many unknown factors in the selection of the crowdsourcing site.  Secondly, we have considered money amounts from around the world without doing any currency conversions, so it's possible that we are not always comparing apples to apples in the data.  Does an Australian dollar have the same feel, the same buying power, as a US dollar or a British pound?  As far as I can tell we don't have data from Japan or India where the basic unit of currency is more comparable to our cents than our dollars, so it seems that at least we are not off in scale.  
+The limitations I can see to this dataset are that it is drawn from only one crowdsourcing site, and that it mixes currencies.  Kickstarter is one of many crowsourcing sites, and it's possible that there are biases about who chooses which sites for which projects.  Are theater campaigns more or less likely to be launched here, and more or less likely to be viewed by the theater community and its supporters? I don't know.  There could be many unknown factors in the selection of the crowdsourcing site.  Secondly, we have considered money amounts from around the world without doing any currency conversions, so it's possible that we are not always comparing apples to apples in the data.  Does an Australian dollar have the same feel, the same buying power, as a US dollar or a British pound?  As far as I can tell we don't have data from countries like Japan or India where the basic unit of currency is more comparable to our cents than our dollars, so it seems that at least we are not off in scale.  
 
 
 ### Other Possible Analyses
