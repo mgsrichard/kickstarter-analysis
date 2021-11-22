@@ -2,17 +2,17 @@
 
 ## Overview of Project
 
-Louise has requested that we provide her with some additional data from our Kickstarter analysis.  She is interested in finding out how different campaigns turned out based on their launch dates and their funding goals. 
+We previoiusly completed an analysis for Louise to help her with her Kickstarter campaign for her play *Fever*, and it came close to its funding goal in good time.  Louise has now requested that we provide her with some additional data from our Kickstarter analysis.  She is interested in finding out how different campaigns turned out based on their launch dates and their funding goals. 
 
 ### Purpose
-The purpose of the challenge is to analyze the data, zeroing in on plays only, to find out what the experience of the campaigns was in relation to the month of the year in which they launched and also in relation to the size of the original goal.  We seek to understand if some months are more successful for launch, and if a particular value range of goals are more successful than others. We will provide results through charts and written analysis.
+The purpose of the challenge is to analyze the data, to find out what the experience of the theater campaigns was in relation to the month of the year in which they launched and what the experience of only plays was in relation to the size of the original goal.  We seek to understand if some months are more successful for launch, and if a particular value range of goals are more successful than others. We will provide results through charts and written analysis.
 
 ## Analysis and Challenges
 To find these answers, I started in Excel.  First I added a column for year in the original Kickstarter data tab, using the Excel function YEAR() and referencing the date created which was in column S in my worksheet. Then I created a pivot table based on the data.  Pivot tables are a little challenging for me, but I am starting to get a good feel for how they work and what happens when you move different fields into the filter, row, column, and value boxes.  Here's how my pivot table looked:
 
 ![pivot table image](https://github.com/mgsrichard/kickstarter-analysis/blob/main/Theater%20outcomes%20based%20on%20launch%20date%20pivot%20screen%20cap.png)
 
-My pivot table came out correct, and then I created the line graph from the data.  I clicked around inside Excel until I found the spot to remove the filter drop down boxes from the graph for a more professional finished look, as in the example in the directions for the challenge.  I saved my line graph image as "Outcomes Based on Dates" and moved on to the next question. 
+My pivot table came out correct, and then I created the line graph from the data.  I clicked around inside Excel until I found the spot to remove the filter drop down boxes from the graph for a more professional finished look, as in the example in the directions for the challenge.  I saved my line graph image as "Theater Outcomes vs Launch.png" and moved on to the next question. 
 
 For the next part, I set up a new sheet in my Excel workbook and called it "Outcomes Based on Goals."  I entered the column and row labels and started to program the counts in the first three columns using the COUNTIF() function.  I was already familiar with the function COUNTIF() (no S) and so I started with that, but then realized that COUNTIF() would only look at a single criteria and I needed to look at 3 or 4.  I briefly considered nesting IF() and AND() statements before I realized that it  said COUNTIFS() (with an S).  So then I learned about COUNTIFS() and was able to program my cells with it.  The first and last rows had three criteria, one for which outcome, a single criteria for value, and one for subcategory, which is plays for all the counting formulas. The in between rows had 4 criteria, one for outcome, one for lower range value, one for upper range value, and one for subcategory.   I was careful about using >,<, >= and <= to be sure that all values would be included, and that I wasn't leaving out the value right at the boundary between the value ranges in the rows. The formula I programmed for successful plays with a goal of less than 1,000 is:
 
@@ -27,7 +27,7 @@ I then found the total number of projects using the SUM() function, and found th
 ![outcome by goal spreadsheet screen cap](https://github.com/mgsrichard/kickstarter-analysis/blob/main/Outcomes%20based%20on%20goals%20spreadsheet.png)
 ![check pivot table](https://github.com/mgsrichard/kickstarter-analysis/blob/main/Pivot%20table%20to%20check%20count%20of%20outcomes%20based%20on%20goals%20spreadsheet%20screen%20cap.png)
 
-Finally, I created my line graph.  I stretched it out until the proportions looked good and put a title on it.  I saved it as "Outcomes Based on Goal."
+Finally, I created my line graph.  I stretched it out until the proportions looked good and put a title on it.  I saved it as "Outcomes vs Goals.png."
 
 ### Analysis of Outcomes Based on Launch Date
 
@@ -56,5 +56,5 @@ The limitations I can see to this dataset are that it is drawn from only one cro
 
 
 ### Other Possible Analyses
-There are other analyses/tables we could look at.  For example, have theses trends changed over the years as more fundraising has moved online? It might be interesting to compare on a yearly basis.  Also, we could look at the duration of the campaigns.  Is it possible that having a couple more weeks makes it more likely for the campaign to be successful?  Another possibility is that we could also do an analysis of size of individual donations, and figure out whether campaigns are more likely to be successful with many small donations or if having one or two large donations makes reaching the goal more likely.  
+There are other analyses/tables we could look at.  For example, have these trends changed over the years as more fundraising has moved online? It might be interesting to compare on a yearly basis.  Also, we could look at the duration of the campaigns.  Is it possible that having a couple more weeks makes it more likely for the campaign to be successful?  Another possibility is that we could also do an analysis of size of individual donations, and figure out whether campaigns are more likely to be successful with many small donations or if having one or two large donations makes reaching the goal more likely.  
 
