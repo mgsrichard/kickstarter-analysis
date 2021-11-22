@@ -2,7 +2,7 @@
 
 ## Overview of Project
 
-We previoiusly completed an analysis for Louise to help her with her Kickstarter campaign for her play *Fever*, and it came close to its funding goal in good time.  Louise has now requested that we provide her with some additional data from our Kickstarter analysis.  She is interested in finding out how different campaigns turned out based on their launch dates and their funding goals. 
+We previously completed an analysis for Louise to help her with her Kickstarter campaign for her play *Fever*, and it came close to its funding goal in good time.  Louise has now requested that we provide her with some additional data from our Kickstarter analysis.  She is interested in finding out how different campaigns turned out based on their launch dates and their funding goals. 
 
 ### Purpose
 The purpose of the challenge is to analyze the data, to find out what the experience of the theater campaigns was in relation to the month of the year in which they launched and what the experience of only plays was in relation to the size of the original goal.  We seek to understand if some months are more successful for launch, and if a particular value range of goals are more successful than others. We will provide results through charts and written analysis.
